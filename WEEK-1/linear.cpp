@@ -8,25 +8,27 @@ for(int i=0;i<t;i++)
 {
 	int n;
 	cin>>n;
-	int a[n+1];
-    for(int i=1;i<=n;i++)
+	int a[n];
+    for(int j=0;j<n;j++)
     {
-    	cin>>a[i];
+    	cin>>a[j];
 	}
    int data,flag,count=0;
    cin>>data;
-   for(int i=1;i<=n;i++)
+   for(int j=0;j<n;j++)
    {
-    if(a[i]==data)
+    if(a[j]==data)
      {
-     	flag=i;
+     	flag=j;
+     	count++;
   	  break;
      }	
     else
     {
   	flag=0;
+  	count++;
     }
-    count++;
+    
 }
 
 if(flag!=0)
